@@ -581,6 +581,109 @@ span {
     width: 90%
 }
 
+.projects {
+    background: black;
+    padding: 5rem 0;
+}
+
+.projects heading {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.projects .projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects .project {
+    border: 2px solid #00abf0;
+    width: calc(33.33% - 4rem);
+    margin: 2rem;
+    background: var(--bg-color);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.projects .project h3 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.projects .project p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+}
+
+.projects .project a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    transition: .3s;
+}
+
+.projects .project a:hover {
+    color: var(--bg-color);
+}
+
+.publications {
+    background: var(--second-bg-color);
+    padding: 5rem 0;
+}
+
+.publications .heading {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.publications .publications-content {
+    display: flex;
+    justify-content: center;
+}
+
+.publications .publication {
+    width: calc(50% - 4rem);
+    margin: 2rem;
+    background: var(--bg-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.publications .publication h3 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.publications .publication p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+}
+
+.publications .publication a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    transition: .3s;
+}
+
+.publications .publication a:hover {
+    color: var(--bg-color);
+}
+
 .contact {
     min-height: auto;
     padding: 7rem;
@@ -704,6 +807,8 @@ section:nth-child(odd) .animate.scroll {
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
+.projects.show-animate .animate.scroll,
+.publications.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0;

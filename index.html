@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <a href="#" class="logo">Ashish. <span class="animate" style="--i:1;"></span></a>
 
@@ -22,7 +23,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#experience">Experience</a>
+            <a href="#education">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#publications">Publications</a>
@@ -32,6 +33,7 @@
             <span class="animate" style="--i:2;"></span>
         </nav>
     </header>
+
 
     <!-- home section -->
     <section class="home show-animate" id="home">
@@ -245,35 +247,43 @@
         <h2 class="heading">Projects<span class="animate scroll" style="--i:1;"></span></h2>
         <div class="projects-content">
             <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
-                <a href="https://link-to-project-1.com">View Project</a>
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                    <a href="https://github.com/Ashish-Abraham/Sketch_GAN">View Project</a>
+                </div>
+                <img src="images\Rembradnt.jpg" alt="Project 1 Image">
             </div>
             <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
-                <a href="https://link-to-project-2.com">View Project</a>
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                    <a href="https://github.com/Ashish-Abraham/Art-and-The-Artist">View Project</a>
+                </div>
+                <img src="images\Rembradnt.jpg" alt="Project 2 Image">
             </div>
             <div class="project">
-                <h3>Project 3</h3>
-                <p>Description of Project 3</p>
-                <a href="https://link-to-project-3.com">View Project</a>
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                    <a href="https://github.com/Ashish-Abraham/watcha-readin">View Project</a>
+                </div>
+                <img src="images\Rembradnt.jpg" alt="Project 3 Image">
             </div>
         </div>
     </section>
 
     <!-- publications section -->
     <section class="publications" id="publications">
-        <h2 class="heading">Publications<span class="animate scroll" style="--i:1;"></span></h2>
+        <h2 class="heading">Publications</h2>
         <div class="publications-content">
-            <ul>
-                <li><a href="https://ieeexplore.ieee.org/document/10100598/authors#authors"> Automatic Recognition of
-                        Continuous Malayalam Speech using Pretrained Multilingual Transformers,
-                        IEEE Explore</a></li>
-            </ul>
+            <div class="publication">
+                <h3>Publication 1</h3>
+                <p>Description of Publication 1</p>
+                <a href="https://link-to-publication-1.com">View Publication</a>
+            </div>
         </div>
     </section>
-
 
     <!-- contact section -->
 
@@ -322,6 +332,27 @@
     </section>
 
 
+    <script src="script.js"></script>
+
+    <script>
+        $("#submit-form").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbzsxR2Asd5ERGxfnSVcgY3izxEAupdix9OpLeCXjY7Pa86zE3TyWxdyp-aAfm-s76Z1Uw/exec",
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error: function (err) {
+                    alert("Something Error")
+
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
