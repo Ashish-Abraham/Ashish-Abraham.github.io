@@ -550,35 +550,35 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 90%
+    width: 100%
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 80%
+    width: 90%
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 70%
+    width: 50%
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 70%
+    width: 50%
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 90%
+    width: 100%
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 80%
+    width: 90%
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 70%
+    width: 50%
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 90%
+    width: 50%
 }
 
 .projects {
@@ -632,6 +632,12 @@ span {
 
 .projects .project a:hover {
     color: var(--bg-color);
+}
+
+.projects .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100px;
 }
 
 .publications {
