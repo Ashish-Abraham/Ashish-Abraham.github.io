@@ -90,9 +90,9 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    /* background: url('/images/Portrait2.jpg') no-repeat;
+    background: url('/images/mic.jpg') no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     /* background: url('/images/Portrait2.jpg') no-repeat right center / cover; */
     /* justify-content: flex-end; */
 }
@@ -172,7 +172,7 @@ section {
     top: 0;
     left: 0;
     width: 0;
-    height: 100%;
+    height: 60%;
     border-right: 2px solid var(--main-color);
     z-index: -1;
 }
@@ -292,6 +292,7 @@ section {
     width: 100%;
 }
 
+
 .about {
     display: flex;
     justify-content: center;
@@ -325,6 +326,7 @@ span {
 
 .about-img img {
     width: 90%;
+    height: 90%;
     border-radius: 50%;
     border: .5rem solid var(--main-color);
 }
@@ -570,15 +572,15 @@ span {
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 90%
+    width: 80%
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 50%
+    width: 70%
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 50%
+    width: 100%
 }
 
 .projects {
@@ -605,7 +607,7 @@ span {
     background: var(--bg-color);
     padding: 2rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .projects .project h3 {
