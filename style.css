@@ -597,6 +597,11 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .projects .project {
@@ -655,6 +660,11 @@ span {
 .publications .publications-content {
     display: flex;
     justify-content: center;
+    position: relative;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .publications .publication {
