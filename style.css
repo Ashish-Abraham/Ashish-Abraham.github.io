@@ -612,6 +612,7 @@ span {
     padding: 2rem;
     text-align: center;
     border-radius: 20px;
+    display: flow-root;
 }
 
 .projects .project h3 {
