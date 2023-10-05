@@ -617,6 +617,7 @@ span {
 
 .projects .project h3 {
     font-size: 2.3rem;
+    display: inline-block;
     color: var(--text-color);
     margin-bottom: 1.5rem;
 }
@@ -680,6 +681,7 @@ span {
 
 .publications .publication h3 {
     font-size: 2.5rem;
+    display: inline-block;
     color: var(--text-color);
     margin-bottom: 1.5rem;
 }
@@ -852,6 +854,12 @@ section:nth-child(odd) .animate.scroll {
 
     .home {
         padding: 0 4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects .publications{
+        width: 100%;
     }
 }
 
